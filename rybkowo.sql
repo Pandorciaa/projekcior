@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Nov 09, 2024 at 04:33 PM
+-- Generation Time: Nov 09, 2024 at 04:46 PM
 -- Server version: 10.4.32-MariaDB
 -- PHP Version: 8.0.30
 
@@ -68,6 +68,7 @@ CREATE TABLE `ryby` (
   `imie` varchar(100) DEFAULT NULL,
   `data_dodania` date DEFAULT current_timestamp(),
   `data_ur` date DEFAULT NULL,
+  `rozmiar` enum('mała','średnia','duża','') NOT NULL,
   `kolor` int(11) DEFAULT NULL,
   `gatunek` int(11) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
@@ -76,9 +77,9 @@ CREATE TABLE `ryby` (
 -- Dumping data for table `ryby`
 --
 
-INSERT INTO `ryby` (`id`, `imie`, `data_dodania`, `data_ur`, `kolor`, `gatunek`) VALUES
-(1, 'Józef', '0000-00-00', '2024-11-08', 1, 1),
-(3, 'Stefan', '2024-11-09', '2024-11-10', 1, 1);
+INSERT INTO `ryby` (`id`, `imie`, `data_dodania`, `data_ur`, `rozmiar`, `kolor`, `gatunek`) VALUES
+(1, 'Józef', '0000-00-00', '2024-11-08', 'mała', 1, 1),
+(3, 'Stefan', '2024-11-09', '2024-11-10', 'mała', 1, 1);
 
 --
 -- Indexes for dumped tables
