@@ -11,23 +11,24 @@ include_once __DIR__ . "/../laczenie_z_baza.php";
 </head>
 <body>
 <header>
-    <h1>Tu dodajesz kolor swojej rybuni!</h1>
+    <h1>Tu dodajesz gatunek swojej rybuni!</h1>
     <nav>
-        <a href="./ryby.php">Dodaj moją rybę</a>
+        <a href="./formularze/ryby.php">Dodaj moją rybę</a>
         <a href="./../index.php">Strona główna</a>
-        <a href="./gatunek.php">gatunki</a>
+        <a href="./formularze/kolor.php">kolory</a>
     </nav>
     </header>
     <main>
         <form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>" method="POST">
-        <label for="kolor">wpisz kolor</label>
-        <input type="text" name="kolor">
+        <label for="gatunek">wpisz gatunek</label>
+        <input type="text" name="gatunek">
         <button type="submit">zatwierdź</button>
         </form>
+        
         <?php 
         if($_SERVER['REQUEST_METHOD'] == 'POST'){
-        $kolor=$_POST['kolor'];
-        $kwerenda="insert into kolory(kolor) values ('$kolor')";
+        $gatunek=$_POST['gatunek'];
+        $kwerenda="insert into gatunek(gatunek) values ('$gatunek')";
         if($conn->query($kwerenda)){
             echo 'dodano';
         } else {
