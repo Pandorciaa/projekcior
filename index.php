@@ -15,11 +15,13 @@
         <a href="./formularze/gatunek.php">gatunki</a>
     </nav>
     </header>
+
     <main>
+     <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Provident nulla atque repellat sed explicabo ullam impedit, libero aliquam consequuntur soluta earum modi debitis nihil rerum ea quod ius</p>   
 
     </main>
     <footer>
-
+    <p>akwarium Martyny :)</p>
     </footer>
 </body>
 </html>
