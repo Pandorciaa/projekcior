@@ -8,14 +8,15 @@ include_once __DIR__ . "/../laczenie_z_baza.php";
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="./../style3.css">
 </head>
 <body>
 <header>
     <h1>Tu dodajesz gatunek swojej rybuni!</h1>
     <nav>
-        <a href="./formularze/ryby.php">Dodaj moją rybę</a>
+        <a href="./ryby.php">Dodaj moją rybę</a>
         <a href="./../index.php">Strona główna</a>
-        <a href="./formularze/kolor.php">kolory</a>
+        <a href="./kolor.php">kolory</a>
     </nav>
     </header>
     <main>
@@ -36,6 +37,22 @@ include_once __DIR__ . "/../laczenie_z_baza.php";
         }
         };
         ?>
+        <div class="galeria">
+        <h2>Przykładowe zdjęcia rybek w moim akwarium</h2>
+            <div class="zdjecia">
+                <div class="zdjeciaa">
+                <img src="./../glonojad.jpg" alt="Rybka">
+                <p>glonojad</p>
+                </div>
+                <div class="zdjeciaa">
+                <img src="./../gupik.jpg" alt="Rybka">
+                <p>gupik</p>
+                </div>
+                <div class="zdjeciaa">
+                <img src="./../bojownik.jpg" alt="Rybka">
+                <p>bojownik</p>
+    </div>
+    </div>
     </main>
 </body>
 </html>

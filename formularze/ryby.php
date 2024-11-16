@@ -8,14 +8,15 @@ include_once __DIR__ . "/../laczenie_z_baza.php";
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="./../style1.css">
 </head>
 <body>
 <header>
-    <h1>Tu dodajesz kolor swojej rybuni!</h1>
+    <h1>Tu dodajesz swoją rybcie do bazy!</h1>
     <nav>
-        <a href="./formularze/ryby.php">Dodaj moją rybę</a>
+        <a href="./kolor.php">kolory</a>
         <a href="./../index.php">Strona główna</a>
-        <a href="./formularze/gatunek.php">gatunki</a>
+        <a href="./gatunek.php">gatunki</a>
     </nav>
     </header>
     <main>
@@ -69,6 +70,10 @@ include_once __DIR__ . "/../laczenie_z_baza.php";
         }
         };
         ?>
-    </main>
+        <div class="zdjecie">
+                <img src="./../rybka.png" alt="Rybka">
+                <p>rybka</p>
+        </div>
+</main>
 </body>
 </html>
